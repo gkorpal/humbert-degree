@@ -1,0 +1,116 @@
+p = 23
+ℓ = 1
+
+Representatives of 5-ary genus rep 1 = 13
+Representatives of 4-ary norm genus = 13
+
+Type 1
+θ = [49  2+48i+0j+2k]
+    [2-48i-0j-2k  49]
+q(E1xE2,θ) = x1^2 + 4*x2^2 + 4*x3^2 + 92*x4^2 + 92*x5^2
+ways to represent 4 = 6
+|Aut(q)| = 128
+deg(E1xE2,θ) = x1^2 + x2^2 + 23*x3^2 + 23*x4^2
+
+Type 2
+θ = [49  10+46i+2j+2k]
+    [10-46i-2j-2k  49]
+q(E1xE2,θ) = x1^2 + 8*x2^2 - 8*x2*x3 + 20*x3^2 - 16*x3*x4 + 8*x3*x5 + 24*x4^2 - 24*x4*x5 + 52*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 16
+deg(E1xE2,θ) = 2*x1^2 - 2*x1*x2 + 5*x2^2 - 4*x2*x3 + 2*x2*x4 + 6*x3^2 - 6*x3*x4 + 13*x4^2
+
+Type 3
+θ = [49  28+34i+2j+4k]
+    [28-34i-2j-4k  49]
+q(E1xE2,θ) = x1^2 + 16*x2^2 + 16*x2*x3 + 16*x2*x4 + 8*x2*x5 + 20*x3^2 + 16*x3*x4 + 16*x3*x5 + 28*x4^2 - 16*x4*x5 + 32*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 8
+deg(E1xE2,θ) = 4*x1^2 + 4*x1*x2 + 4*x1*x3 + 2*x1*x4 + 5*x2^2 + 4*x2*x3 + 4*x2*x4 + 7*x3^2 - 4*x3*x4 + 8*x4^2
+
+Type 4
+θ = [49  2+44i+2j+4k]
+    [2-44i-2j-4k  49]
+q(E1xE2,θ) = x1^2 + 20*x2^2 - 8*x2*x3 + 8*x2*x5 + 20*x3^2 - 8*x3*x4 + 20*x4^2 - 8*x4*x5 + 20*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 32
+deg(E1xE2,θ) = 5*x1^2 - 2*x1*x2 + 2*x1*x4 + 5*x2^2 - 2*x2*x3 + 5*x3^2 - 2*x3*x4 + 5*x4^2
+
+Type 5
+θ = [49  12+28i+0j+8k]
+    [12-28i-0j-8k  49]
+q(E1xE2,θ) = x1^2 + 4*x2^2 + 12*x3^2 - 8*x3*x4 + 32*x4^2 + 92*x5^2
+ways to represent 4 = 4
+|Aut(q)| = 16
+deg(E1xE2,θ) = x1^2 + 3*x2^2 - 2*x2*x3 + 8*x3^2 + 23*x4^2
+
+Type 6
+θ = [49  6+8i+6j+8k]
+    [6-8i-6j-8k  49]
+q(E1xE2,θ) = x1^2 + 12*x2^2 - 8*x2*x4 + 12*x3^2 + 8*x3*x5 + 32*x4^2 + 32*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 16
+deg(E1xE2,θ) = 3*x1^2 - 2*x1*x3 + 3*x2^2 + 2*x2*x4 + 8*x3^2 + 8*x4^2
+
+Type 7
+θ = [49  0+10i+6j+8k]
+    [0-10i-6j-8k  49]
+q(E1xE2,θ) = x1^2 + 4*x2^2 + 8*x3^2 - 8*x3*x4 + 48*x4^2 + 92*x5^2
+ways to represent 4 = 4
+|Aut(q)| = 32
+deg(E1xE2,θ) = x1^2 + 2*x2^2 - 2*x2*x3 + 12*x3^2 + 23*x4^2
+
+Type 8
+θ = [53  32+40i+2j+2k]
+    [32-40i-2j-2k  53]
+q(E1xE2,θ) = x1^2 + 8*x2^2 + 8*x2*x5 + 12*x3^2 - 8*x3*x4 + 32*x4^2 + 48*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 16
+deg(E1xE2,θ) = 2*x1^2 + 2*x1*x4 + 3*x2^2 - 2*x2*x3 + 8*x3^2 + 12*x4^2
+
+Type 9
+θ = [53  18+46i+0j+4k]
+    [18-46i-0j-4k  53]
+q(E1xE2,θ) = x1^2 + 4*x2^2 + 16*x3^2 + 8*x3*x4 + 24*x4^2 + 92*x5^2
+ways to represent 4 = 4
+|Aut(q)| = 16
+deg(E1xE2,θ) = x1^2 + 4*x2^2 + 2*x2*x3 + 6*x3^2 + 23*x4^2
+
+Type 10
+θ = [53  4+20i+2j+10k]
+    [4-20i-2j-10k  53]
+q(E1xE2,θ) = x1^2 + 16*x2^2 - 8*x2*x4 - 16*x2*x5 + 16*x3^2 + 16*x3*x4 + 8*x3*x5 + 28*x4^2 + 8*x4*x5 + 28*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 16
+deg(E1xE2,θ) = 4*x1^2 - 2*x1*x3 - 4*x1*x4 + 4*x2^2 + 4*x2*x3 + 2*x2*x4 + 7*x3^2 + 2*x3*x4 + 7*x4^2
+
+Type 11
+θ = [55  18+20i+6j+8k]
+    [18-20i-6j-8k  55]
+q(E1xE2,θ) = x1^2 + 20*x2^2 - 8*x2*x3 - 16*x2*x4 + 8*x2*x5 + 20*x3^2 - 8*x3*x4 + 16*x3*x5 + 24*x4^2 - 16*x4*x5 + 24*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 8
+deg(E1xE2,θ) = 5*x1^2 - 2*x1*x2 - 4*x1*x3 + 2*x1*x4 + 5*x2^2 - 2*x2*x3 + 4*x2*x4 + 6*x3^2 - 4*x3*x4 + 6*x4^2
+
+Type 12
+θ = [55  10+16i+4j+10k]
+    [10-16i-4j-10k  55]
+q(E1xE2,θ) = x1^2 + 12*x2^2 - 8*x2*x5 + 16*x3^2 - 8*x3*x4 + 24*x4^2 + 32*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 8
+deg(E1xE2,θ) = 3*x1^2 - 2*x1*x4 + 4*x2^2 - 2*x2*x3 + 6*x3^2 + 8*x4^2
+
+Type 13
+θ = [63  26+30i+2j+10k]
+    [26-30i-2j-10k  63]
+q(E1xE2,θ) = x1^2 + 12*x2^2 + 8*x2*x3 - 8*x2*x5 + 12*x3^2 + 8*x3*x4 + 36*x4^2 + 24*x4*x5 + 36*x5^2
+ways to represent 4 = 2
+|Aut(q)| = 8
+deg(E1xE2,θ) = 3*x1^2 + 2*x1*x2 - 2*x1*x4 + 3*x2^2 + 2*x2*x3 + 9*x3^2 + 6*x3*x4 + 9*x4^2
+
+total polarizations checked: 986
+total RHI's computed: 108
+
+polarization leading to same type: Dict(5 => 6, 12 => 7, 8 => 17, 1 => 9, 6 => 5, 11 => 6, 9 => 14, 3 => 9, 7 => 12, 4 => 4, 13 => 5, 2 => 7, 10 => 7)
+
+Total run time: 0.0 hrs 0.0 min 11.0 sec
