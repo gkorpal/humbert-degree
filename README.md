@@ -2,6 +2,10 @@
 
 This directory contains the implementation of the algorithms and the results of the computations described in the paper.
 
+**ePrint:** [2025/1605](https://eprint.iacr.org/2025/1605)
+
+**Authors:** Eda Kırımlı and Gaurish Korpal
+
 ## Directory Organization
 
 ### A. Package
