@@ -12,7 +12,7 @@ All scripts are in [`/scripts/`](/scripts/) and are implemented in Julia using t
 
 **Pipeline 1: Polarizations and reducible RHIs**
 
-- [`polz.jl`](/scripts/polz.jl) implements $\mathsf{dynamicPolz}(p)$ (Algorithm 2), enumerating all principal polarizations on $E \times E$ up to equivalence for a given prime $p \equiv 11 \pmod{12}$. Each polarization is a unimodular positive definite binary Hermitian form $\theta = \begin{pmatrix} u & \alpha \\ \bar{\alpha} & v \end{pmatrix}$ over the fixed maximal order $\mathcal{O} \subset B_p$. Following the approach of [Greenberg–Voight](http://arxiv.org/abs/1209.2460v1) and [Chisholm](http://hdl.handle.net/11023/1920), each polarization is converted to a rank-8 integral lattice equipped with four auxiliary trace forms $F_1, F_2, F_3, F_4$. The auxiliary forms are LLL-reduced and two candidates are identified as equivalent via exact simultaneous Plesken–Souvignier isometry. The enumeration bound grows dynamically until the number of non-isometric polarizations reaches the class number $\mathbf{H}(p)$. This is the most computationally intensive step.
+- [`polz.jl`](/scripts/polz.jl) implements $\mathsf{dynamicPolz}(p)$ (Algorithm 2), enumerating all principal polarizations on $E \times E$ up to equivalence for a given prime $p \equiv 11 \pmod{12}$. Each polarization is a unimodular positive definite binary Hermitian form $\theta$ over the fixed maximal order $\mathcal{O} \subset B_p$. Following the approach of [Greenberg–Voight](http://arxiv.org/abs/1209.2460v1) and [Chisholm](http://hdl.handle.net/11023/1920), each polarization is converted to a rank-8 integral lattice equipped with four auxiliary trace forms $F_1, F_2, F_3, F_4$. The auxiliary forms are LLL-reduced and two candidates are identified as equivalent via exact simultaneous Plesken–Souvignier isometry. The enumeration bound grows dynamically until the number of non-isometric polarizations reaches the class number $\mathbf{H}(p)$. This is the most computationally intensive step.
 
 - [`forms.jl`](/scripts/forms.jl) implements Algorithms 1 and 3. It reads the polarizations produced by `polz.jl` and computes, for each polarization $\theta$, the coefficient matrix of the reducible refined Humbert invariant $q_{(E \times E, \theta)}$ and the corresponding degree form $\deg$, where
 $$q_{(E \times E,\, \theta)}(D) = X^2 + 4 \cdot \deg.$$
@@ -32,7 +32,7 @@ corresponding to the identity polarization $\theta_0$. The genus of $q_4$ counts
 
 All data is in [`/data/`](/data/) as human-readable `.txt` files, organized by computation type.
 
-- [`/data/polarizations/`](/data/polarizations/) contains the principal polarizations produced by `polz.jl` for each prime $p$. Each file lists the parameters $(u, v, w, x, y, z)$ of each polarization $\theta = \begin{pmatrix} u & \alpha \\ \bar{\alpha} & v \end{pmatrix}$ with $\alpha = w + xi + y\frac{i+j}{2} + z\frac{1+k}{2}$.
+- [`/data/polarizations/`](/data/polarizations/) contains the principal polarizations produced by `polz.jl` for each prime $p$. Each file lists the parameters $(u, v, w, x, y, z)$ of each polarization $\theta$ with diagonal entries $u, v \in \mathbb{Z}_{>0}$ and off-diagonal entry $\alpha \in \mathcal{O}$ such that $\alpha = w + xi + y\frac{i+j}{2} + z\frac{1+k}{2}$.
 
 - [`/data/RHI1/`](/data/RHI1/) contains the quadratic forms produced by `forms.jl`.
 
