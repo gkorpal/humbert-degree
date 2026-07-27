@@ -15,15 +15,15 @@ All scripts are in [`/scripts/`](/scripts/) and are implemented in Julia using t
 - [`polz.jl`](/scripts/polz.jl) implements $\mathsf{dynamicPolz}(p)$ (Algorithm 2), enumerating all principal polarizations on $E \times E$ up to equivalence for a given prime $p \equiv 11 \pmod{12}$. Each polarization is a unimodular positive definite binary Hermitian form $\theta$ over the fixed maximal order $\mathcal{O} \subset B_p$. Following the approach of [Greenberg–Voight](http://arxiv.org/abs/1209.2460v1) and [Chisholm](http://hdl.handle.net/11023/1920), each polarization is converted to a rank-8 integral lattice equipped with four auxiliary trace forms $F_1, F_2, F_3, F_4$. The auxiliary forms are LLL-reduced and two candidates are identified as equivalent via exact simultaneous Plesken–Souvignier isometry. The enumeration bound grows dynamically until the number of non-isometric polarizations reaches the class number $\mathbf{H}(p)$. This is the most computationally intensive step.
 
 - [`forms.jl`](/scripts/forms.jl) implements Algorithms 1 and 3. It reads the polarizations produced by `polz.jl` and computes, for each polarization $\theta$, the coefficient matrix of the reducible refined Humbert invariant $q_{(E \times E, \theta)}$ and the corresponding degree form $\deg$, where
-$$q_{(E \times E,\, \theta)}(D) = X^2 + 4 \cdot \deg.$$
+$q_{(E \times E,\, \theta)}(D) = X^2 + 4 \cdot \deg.$
 
 - [`deg.jl`](/scripts/deg.jl) reads the output of `forms.jl` and computes the distribution of $d = \max_{E_1, E_2} \min\{N : q_{E_1,E_2} = N\}$ over all computed isometry classes of reducible refined Humbert invariants.
 
 **Pipeline 2: Genus of $q_4$ and degree maps**
 - [`genus.jl`](/scripts/genus.jl) computes the genus of the lattice
-$$q_4 = t_1^2 + t_1t_3 + t_2^2 + t_2t_4 + \tfrac{p+1}{4}t_3^2 + \tfrac{p+1}{4}t_4^2,$$
+$q_4 = t_1^2 + t_1t_3 + t_2^2 + t_2t_4 + \tfrac{p+1}{4}t_3^2 + \tfrac{p+1}{4}t_4^2,$
 which is the degree form extracted from the canonical refined Humbert invariant
-$$q_5 = t_0^2 + 4t_1^2 + 4t_1t_3 + 4t_2^2 + 4t_2t_4 + (p+1)t_3^2 + (p+1)t_4^2$$
+$q_5 = t_0^2 + 4t_1^2 + 4t_1t_3 + 4t_2^2 + 4t_2t_4 + (p+1)t_3^2 + (p+1)t_4^2$
 corresponding to the identity polarization $\theta_0$. The genus of $q_4$ counts all isometry classes of reducible refined Humbert invariants.
 
 - [`deg_gen.jl`](/scripts/deg_gen.jl) computes the $d$ value for each genus class of $q_4$, giving the complete distribution of minimum isogeny degrees.
